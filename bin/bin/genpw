@@ -1,0 +1,2 @@
+#!/bin/sh
+tr -dc a-zA-Z1-9 < /dev/random  | head -c 30 | xclip -sel clip

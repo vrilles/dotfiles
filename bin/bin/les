@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# browse/open docs
+
+ext() {
+    basename "$1" | sed 's/.*\.//'
+}
+
+out="$(find "$HOME/docs" "$HOME/texmf/.tex" | grep '.pdf\|.epub\|.djvu' | sort | dmenu -l 15)"
+
+[ -f "$out" ] &&
+    if [ "$(ext "$out")" = "pdf" ] 
+        then 
+            evince "$out" 
+        else
+            zathura "$out"
+    fi

@@ -1,0 +1,66 @@
+st.font: jetbrains mono:size=15.2:style=medium, xft:symbola:size=12
+dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
+emacs.font: jetbrains mono:size=18:style=medium
+
+urxvt.font: xft:jetbrains mono:size=15.2:style=medium, xft:symbola:size=12
+urxvt.italicFont: xft:jetbrains mono:size=15.2:style=italic
+urxvt.boldFont: xft:jetbrains mono:size=15.2:style=bold
+
+/* colors */
+#include "/home/lpy/.themes/seashell"
+
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+uxxvt.letterSpace: 0
+urxvt.lineSpace: 0
+urxvt.geometry: 70x25
+urxvt.internalBorder: 40
+urxvt.intensityStyles: False
+urxvt.scrollBar: False
+urxvt.scrollBar_right: True
+urxvt.cursorBlink: True
+urxvt.cursorUnderline: True
+URxvt.perl-ext-common: default,clipboard,font-size
+
+URxvt.keysym.M-K:     font-size:increase
+URxvt.keysym.M-J:     font-size:decrease
+URxvt.keysym.M-plus:  font-size:reset
+URxvt.keysym.M-slash: font-size:show
+URxvt.keysym.C-shift: font-size:show
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.clipboard.autocopy: true
+URxvt.keysym.M-v: eval:paste_clipboard
+URxvt.keysym.M-c: eval:selection_to_clipboard
+
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+dmenu.selbackground: base00
+dmenu.selforeground: base05
+dmenu.foreground: base03
+
+*color0: base00
+*color1: base08
+*color2: base0B
+*color3: base0A
+*color4: base0D
+*color5: base0E
+*color6: base0C
+*color7: base05
+
+*color8:  base03
+*color9:  base09
+*color10: base01
+*color11: base02
+*color12: base04
+*color13: base06
+*color14: base0F
+*color15: base07

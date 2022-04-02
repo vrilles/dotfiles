@@ -1,0 +1,30 @@
+# xbps
+alias pi='doas xbps-install -S'
+alias pd='doas xbps-remove -R'
+alias pq='xbps-query -R -s'
+alias pqi='xbps-query -l'
+alias pu='doas xbps-install -Su'
+
+# programs
+alias z=zathura
+alias svi=sudoedit
+alias colo='pastel color'
+alias bc='bc -l ~/.ext.bc'
+alias csi='rlwrap csi'
+alias beets='beet import ~/downloads/music'
+alias sage='doas docker run -it sagemath/sagemath:latest'
+alias weechat='pass -c weechat && weechat'
+alias toxic='pass -c tox && toxic'
+alias cmus="tmux new -s music cmus"
+
+# fm
+alias ls='ls --color=auto'
+
+# power
+alias poweroff='doas poweroff'
+alias reboot='doas reboot'
+
+# misc
+alias ivc='nvim ~/.config/nvim/init.vim'
+alias a='tmux a -t'
+alias l='tmux ls'

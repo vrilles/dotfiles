@@ -1,0 +1,3 @@
+#!/bin/sh
+
+tmux new -s music cmus || tmux attach -t music

@@ -1,0 +1,36 @@
+#!/bin/sh
+#
+# info pop-up
+
+dir="/sys/class/power_supply/BAT0"
+bat="$(cat "$dir"/capacity)%"
+
+net=$(iw dev | grep -w ssid | sed s/ssid// | tr -d '\t ')
+ssid="connected to “$net”"
+weather="$(cat "$HOME"/.weather)"
+
+[ -z "$net" ] && ssid="not connected"
+
+vol="$(amixer sget Master | 
+    tail -n 1 | awk '{print $5}' | tr -d "[:punct:]")%"
+
+mu="$(amixer sget Master | 
+    tail -n 1 | awk '{print $6}' | tr -d "[:punct:]")"
+
+[ "$mu" = off ] && vol="muted"
+
+pgrep -x cmus && . /home/lpy/bin/np
+
+
+herbe \
+    "- $ssid" " " \
+    "- $(date "+%a, %d %b")" " " \
+    "- volume: $vol" " " \
+    "- bat: $bat" " " \
+    "- weather: $weather" " " \
+    "$npstr"
+
+## workspaces
+# ws="$(wmctrl -d | awk '{print $2}' | tr '\n' ' ')"
+#
+# - - - * - - - - - 
