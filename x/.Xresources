@@ -1,10 +1,10 @@
-st.font: jetbrains mono:size=15.2:style=medium, xft:symbola:size=12
+st.font: ibm plex mono:size=15.2:style=medium, xft:symbola:size=12
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
-emacs.font: jetbrains mono:size=18:style=medium
+emacs.font: ibm plex mono:size=18:style=medium
 
-urxvt.font: xft:jetbrains mono:size=15.2:style=medium, xft:symbola:size=12
-urxvt.italicFont: xft:jetbrains mono:size=15.2:style=italic
-urxvt.boldFont: xft:jetbrains mono:size=15.2:style=bold
+urxvt.font: xft:ibm plex mono:size=15.2:style=medium, xft:symbola:size=12
+urxvt.italicFont: xft:ibm plex mono:size=15.2:style=italic
+urxvt.boldFont: xft:ibm plex mono:size=15.2:style=semibold
 
 /* colors */
 #include "/home/lpy/.themes/seashell"
