@@ -18,11 +18,10 @@ list="$(
 
 out="/home/lpy/docs/$list"
 
-[ -n "$out" ] &&
+[ -f "$out" ] &&
     if [ "$(ext "$out")" = "epub" ]
         then
             ebook-viewer "$out"
         else
-            echo "$out"
             zathura "$out"
     fi
