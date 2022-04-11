@@ -1,5 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
  Plug 'dense-analysis/ale'
+ Plug 'jiangmio/auto-pairs'
+ Plug 'tpope/vim-rsi'
+ Plug 'tpope/vim-commentary'
  Plug 'neovimhaskell/haskell-vim'
  Plug 'zah/nim.vim'
 call plug#end()

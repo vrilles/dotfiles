@@ -6,12 +6,23 @@ ext() {
     basename "$1" | sed 's/.*\.//'
 }
 
-out="$(find "$HOME/docs" "$HOME/texmf/.tex" | grep '.pdf\|.epub\|.djvu' | sort | dmenu -l 15)"
+list="$(
+    find "$HOME/docs" |
+        grep '.pdf\|.epub\|.djvu' |
+        sed 's/\/home\/lpy\/docs\///' |
+        sed 's/\//\ >\ /g' |
+        sort |
+        dmenu -l 10 |
+        sed 's/\ >\ /\//g'
+)"
 
-[ -f "$out" ] &&
-    if [ "$(ext "$out")" = "pdf" ] 
-        then 
-            evince "$out" 
+out="/home/lpy/docs/$list"
+
+[ -n "$out" ] &&
+    if [ "$(ext "$out")" = "epub" ]
+        then
+            ebook-viewer "$out"
         else
+            echo "$out"
             zathura "$out"
     fi
