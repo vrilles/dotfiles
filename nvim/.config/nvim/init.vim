@@ -31,7 +31,7 @@ command! W w
 command! Q q
 cabbrev he tab help
 
-autocmd BufNewFile *tex 0r ~/.config/nvim/templates/temp.tex
+autocmd BufNewFile *tex 0r ~/.config/nvim/templates/template.tex
 autocmd FileType c setlocal noet tw=80
 autocmd FileType h setlocal noet tw=80
 autocmd FileType help setlocal laststatus=0

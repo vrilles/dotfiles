@@ -2,9 +2,9 @@ st.font: ibm plex mono:size=15.2:style=medium, xft:symbola:size=12
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
 emacs.font: ibm plex mono:size=18:style=medium
 
-urxvt.font: xft:ibm plex mono:size=15.2:style=medium, xft:symbola:size=12
+urxvt.font: xft:ibm plex mono:size=15.2:style=medium, xft:symbola:size=12,xft:Noto Sans Mono CJK JP:size=15
 urxvt.italicFont: xft:ibm plex mono:size=15.2:style=italic
-urxvt.boldFont: xft:ibm plex mono:size=15.2:style=semibold
+urxvt.boldFont: xft:ibm plex mono:size=15.2:style=semibold,xft:Noto Sans Mono CJK JP:size=15:style=bold
 
 /* colors */
 #include "/home/lpy/.themes/seashell"
