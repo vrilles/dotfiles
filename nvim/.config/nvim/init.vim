@@ -16,6 +16,7 @@ colorscheme rein
 
 map <leader>ll :w <CR> :!xelatex -shell-escape % <CR>
 map <leader>re :source $MYVIMRC <CR>
+map <leader>cl :ConjureLogVSplit <CR>
 map <F8> :w <CR> :!g++ % -o %< && ./%< <CR>
 nnoremap <backspace> :<backspace>
 map <C-h> :noh <CR><backspace>
