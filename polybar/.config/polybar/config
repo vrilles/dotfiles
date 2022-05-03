@@ -34,12 +34,6 @@ font-1 = sf compact display:style=medium:size=13
 modules-left = time battery ewmh 
 
 
-[module/wireless]
-type = internal/network
-interface = wlo1
-format-connected = 
-format-disconnected = 
-
 [module/ewmh]
 type = internal/xworkspaces
 pin-workspaces = true
@@ -104,16 +98,5 @@ animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 1000
-
-[module/volume]
-type = internal/alsa
-
-format-volume = <ramp-volume>
-label-muted = 婢
-label-muted-foreground = ${colors.dim}
-
-ramp-volume-0 = 
-ramp-volume-1 = 墳
-ramp-volume-2 = 
 
 ; vim:ft=dosini

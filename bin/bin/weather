@@ -1,3 +1,0 @@
-#!/bin/sh
-
-curl -s http://wttr.in/?format="%t,%20%C" | tr -d '+' > .weather

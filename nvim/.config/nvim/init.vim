@@ -1,10 +1,12 @@
 call plug#begin('~/.config/nvim/plugged')
  Plug 'dense-analysis/ale'
- Plug 'jiangmio/auto-pairs'
+ Plug 'jiangmiao/auto-pairs'
  Plug 'tpope/vim-rsi'
  Plug 'tpope/vim-commentary'
+
  Plug 'neovimhaskell/haskell-vim'
  Plug 'zah/nim.vim'
+ Plug 'Olical/conjure'
 call plug#end()
 
 syntax on
@@ -13,10 +15,21 @@ set clipboard+=unnamedplus
 colorscheme rein
 
 map <leader>ll :w <CR> :!xelatex -shell-escape % <CR>
+map <leader>re :source $MYVIMRC <CR>
 map <F8> :w <CR> :!g++ % -o %< && ./%< <CR>
 nnoremap <backspace> :<backspace>
+map <C-h> :noh <CR><backspace>
 nnoremap <silent><leader>aa :ALEToggle<CR>
+nmap <leader>sp :call <SID>SynStack()<CR>
 
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
+let maplocalleader = "\\"
 let g:tex_flavor = "latex"
 let g:ale_enabled = 0
 let g:ale_lint_on_text_changed = 'never'
