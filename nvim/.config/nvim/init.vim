@@ -4,8 +4,11 @@ call plug#begin('~/.config/nvim/plugged')
  Plug 'tpope/vim-rsi'
  Plug 'tpope/vim-commentary'
 
+ Plug 'jalvesaq/Nvim-R'
+ Plug 'elixir-editors/vim-elixir'
  Plug 'neovimhaskell/haskell-vim'
  Plug 'zah/nim.vim'
+ Plug 'brandonbloom/vim-factor'
  Plug 'Olical/conjure'
 call plug#end()
 

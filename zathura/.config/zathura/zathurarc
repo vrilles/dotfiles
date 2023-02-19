@@ -19,7 +19,7 @@ set font "Source Serif Pro 12"
 set guioptions n
 
 # colors
-set default-bg   "#64625a"
+set default-bg   "#efefef"
 set statusbar-fg "#ffffff"
 set statusbar-bg "#434343"
 
@@ -42,8 +42,8 @@ set highlight-active-color "#7c9f4b"
 set notification-fg "#ffffff"
 set notification-bg "#404040"
 
-set recolor-lightcolor "#fffcf1"
-set recolor-darkcolor  "#564c31"
+set recolor-lightcolor "#2f2f2f"
+set recolor-darkcolor  "#afb8c6"
 
 set notification-error-bg "#ffffff"
 set notification-error-fg "#e15483"
