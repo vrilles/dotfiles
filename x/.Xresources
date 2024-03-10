@@ -1,4 +1,4 @@
-st.font: Victor Mono:size=15.6
+st.font: Victor Mono Nerd Font:size=15.4
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
 emacs.font: Jetbrains Mono:size=18:style=regular
 
