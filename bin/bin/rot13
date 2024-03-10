@@ -5,6 +5,6 @@ rot() {
 }
 
 case "$1" in
-    "-c") shift ; rot "$@" | xclip -sel clip ;;
-       *) rot "$@"
+    "-c") shift ; rot "$*" | xclip -sel clip ;;
+       *) rot "$*"
 esac

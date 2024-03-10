@@ -6,6 +6,7 @@ setxkbmap -option caps:escape -option compose:rctrl
 redshift &
 ibus-daemon -xdr &
 ~/bin/kbtoggle &
+picom &
 
 # polybar &
 sxhkd -c "$HOME/.config/berry/sxhkdrc" &

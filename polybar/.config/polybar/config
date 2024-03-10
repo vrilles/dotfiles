@@ -2,15 +2,15 @@
 background = ${xrdb:color0}
 foreground = ${xrdb:color7}
 dim = ${xrdb:color10}
-primary = ${xrdb:color6}
+primary = ${xrdb:color4}
 secondary = ${xrdb:color2}
 alert = ${xrdb:color6}
 
 [bar/1]
 bottom   = false
-width    = 21.5%
+width    = 21.55%
 height   = 40
-offset-x = 39.25%
+offset-x = 39.52%
 offset-y = 0%
 radius   = 0
 fixed-center = true

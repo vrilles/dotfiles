@@ -7,6 +7,7 @@ artist="$(cmus-remote -Q | grep -w '^tag artist')" ; artist="${artist##*artist }
 stat="$(cmus-remote -Q | grep -w '^status' | awk '{print $2}')"
 
 pad() { i="$1"; [ "$i" -lt 10 ] && i="0$i"; printf '%s' "$i"; }
+
 dur="$(cmus-remote -Q | grep '^duration' | awk '{print $2}')"
 
 [ "$stat" != stopped ] &&
@@ -17,6 +18,6 @@ pos_pre=$(pad $(( pos / 60 )))
 dur_suf=$(pad $(( dur % 60 )))
 dur_pre=$(pad $(( dur / 60 )))
 
-npstr="$artist - $title (-$pos_pre:$pos_suf / $dur_pre:$dur_suf)"
+npstr="$artist — $title [-$pos_pre:$pos_suf / $dur_pre:$dur_suf]"
 
 [ "$stat" = paused ] && npstr="| $npstr" || npstr="> $npstr"

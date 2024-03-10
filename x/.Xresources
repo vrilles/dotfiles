@@ -1,10 +1,10 @@
-st.font: sf mono:size=16
+st.font: Victor Mono:size=15.6
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
-emacs.font: sf mono:size=18:style=regular
+emacs.font: Jetbrains Mono:size=18:style=regular
 
-urxvt.font: xft:sf mono:size=16:style=regular, xft:symbola:size=12,xft:Noto Sans Mono CJK JP:size=15
-urxvt.italicFont: xft:sf mono:size=16:style=italic
-urxvt.boldFont: xft:sf mono:size=16:style=semibold,xft:Noto Sans Mono CJK JP:size=15:style=bold
+urxvt.font: xft:Jetbrains Mono:size=16:style=regular, xft:symbola:size=12,xft:Noto Sans Mono CJK JP:size=15
+urxvt.italicFont: xft:Jetbrains Mono:size=16:style=italic
+urxvt.boldFont: xft:Jetbrains Mono:size=16:style=semibold,xft:Noto Sans Mono CJK JP:size=15:style=bold
 
 /* colors */
 #include "/home/lpy/.themes/seashell"
