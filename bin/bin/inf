@@ -5,8 +5,7 @@
 dir="/sys/class/power_supply/BAT0"
 bat="$(cat "$dir"/capacity)%"
 
-# net=$(nmcli -t -f ssid | head -n 1 | cut --complement -b 1-19)
-net="vrilles"
+net=$(nmcli -t -f ssid | head -n 1 | cut --complement -b 1-19)
 ssid="connected to <$net>"
 weather="$(cat "$HOME"/.weather)"
 
