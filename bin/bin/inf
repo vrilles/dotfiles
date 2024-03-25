@@ -22,9 +22,10 @@ mu="$(amixer sget Master |
 pgrep -x cmus > /dev/null && . /home/lpy/bin/np
 
 herbe \
-    "• $ssid" " " \
-    "• $(date "+%a, %d %b")" " " \
-    "• volume: $vol" " " \
-    "• bat: $bat" " " \
-    "• weather: $weather" " " \
+    "‥  $ssid" " " \
+    "‥  $(date "+%a, %d %b")" " " \
+    "‥  volume: $vol" " " \
+    "‥  weather: $weather" " " \
     "$npstr"
+
+    ## "‥  battery at $bat" " " \

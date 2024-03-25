@@ -9,7 +9,7 @@ extension() {
 list="$(
     find "$HOME/docs" |
         grep '\.pdf\|\.epub\|\.djvu\|\.mobi' |
-        sed 's/\/home\/lpy\/docs\///' |
+        sed 's/\/home\/lpy\/docs//' |
         sort |
         dmenu -l 10
 )"
