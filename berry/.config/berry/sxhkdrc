@@ -12,11 +12,11 @@ super + d
 
 # docs
 alt + i
-    /home/lpy/bin/les
+    "$HOME"/bin/les
 
 # info script
 super + i
-    /home/lpy/bin/inf
+    "$HOME"/bin/inf
 
 # take scrot
 super + s
@@ -33,7 +33,7 @@ super + {plus,minus,t}
     amixer set Master {5%+,5%-,toggle}
 
 super + 0
-    /home/lpy/bin/lock
+    "$HOME"/bin/lock
 
 # super + @space
 #     herbe "$(cat docs/task_stack)"
@@ -96,7 +96,7 @@ super + q
     berryc window_close
 
 super + shift + r
-    /home/lpy/.config/berry/autostart
+    "$HOME"/.config/berry/autostart
 
 super + c
     berryc window_center

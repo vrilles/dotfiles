@@ -2,7 +2,7 @@
 
 
 ## Tools
-- wm: [berry](https://github.com/jlervin/berry)
+- wm: [openbox](http://openbox.org/wiki/Main_Page)
 - multiplexer: [tmux](https://github.com/tmux/tmux)
 - terminal emulator: [urxvt](https://linux.die.net/man/1/urxvt)
 - editor: [neovim](https://neovim.io)

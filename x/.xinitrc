@@ -8,12 +8,14 @@ ibus-daemon -xdr &
 ~/bin/kbtoggle &
 picom &
 
-# polybar &
-sxhkd -c "$HOME/.config/berry/sxhkdrc" &
-# sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
+# sxhkd -c "$HOME/.config/berry/sxhkdrc" &
+sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
 
 ~/.fehbg &
-urxvtd -q -o &
+# urxvtd -q -o &
+polybar &
 
-exec berry
+# exec berry
+# startxfce4
+exec openbox
 # exec xfwm4
