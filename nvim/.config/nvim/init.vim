@@ -53,7 +53,7 @@ autocmd FileType c setlocal noet tw=80
 autocmd FileType h setlocal noet tw=80
 autocmd FileType help setlocal laststatus=0
 
-set nosol conceallevel=2 path=$PWD/** wildmenu laststatus=2 splitright tabstop=4 noruler softtabstop=4 expandtab shiftwidth=4 smarttab smartcase guicursor= wildignore+=*/tmp/*,*.so,*.swp,*.zip, wildignore+=*.flac,*.mp3
+set notermguicolors nosol conceallevel=2 path=$PWD/** wildmenu laststatus=2 splitright tabstop=4 noruler softtabstop=4 expandtab shiftwidth=4 smarttab smartcase guicursor= wildignore+=*/tmp/*,*.so,*.swp,*.zip, wildignore+=*.flac,*.mp3
 
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")

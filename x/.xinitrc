@@ -12,7 +12,7 @@ picom &
 sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
 
 ~/.fehbg &
-# urxvtd -q -o &
+urxvtd -q -o &
 polybar &
 
 # exec berry

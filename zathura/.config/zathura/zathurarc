@@ -36,8 +36,8 @@ set completion-highlight-bg "#fafafa"
 set completion-bg "#fafafa"
 set completion-fg "#676767"
 
-set highlight-color "#89ddff"
-set highlight-active-color "#7c9f4b"
+set highlight-color "rgba(255, 255, 0, 0.5)"
+set highlight-fg "#000"
 
 set notification-fg "#ffffff"
 set notification-bg "#404040"

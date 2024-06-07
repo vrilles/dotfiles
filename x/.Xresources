@@ -1,10 +1,10 @@
-st.font: Victor Mono Nerd Font:size=15.4
+st.font: Jetbrains Mono:style=medium:size=15.2
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
 emacs.font: Jetbrains Mono:size=18:style=regular
 
-urxvt.font: xft:Jetbrains Mono:size=16:style=regular, xft:symbola:size=12,xft:Noto Sans Mono CJK JP:size=15
-urxvt.italicFont: xft:Jetbrains Mono:size=16:style=italic
-urxvt.boldFont: xft:Jetbrains Mono:size=16:style=semibold,xft:Noto Sans Mono CJK JP:size=15:style=bold
+urxvt.font: xft:Jetbrains Mono:size=15.2:style=regular, xft:symbola:size=16,xft:Noto Sans Mono CJK JP:size=16
+urxvt.italicFont: xft:Jetbrains Mono:size=15.2:style=italic
+urxvt.boldFont: xft:Jetbrains Mono:size=15.2:style=semibold,xft:Noto Sans Mono CJK JP:size=16:style=bold
 
 /* colors */
 #include "/home/lpy/.themes/seashell"

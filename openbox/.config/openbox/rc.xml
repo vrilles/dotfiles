@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Plata</name>
-    <titleLayout>NIMC</titleLayout>
+    <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -55,7 +55,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Source Serif 4 Display Semi-Bold</name>
       <size>12</size>

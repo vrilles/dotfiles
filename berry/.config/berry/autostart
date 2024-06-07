@@ -28,4 +28,3 @@ berryc text_focus_color   "${silent###}"
 berryc text_unfocus_color "${gr###}"
 
 berryc set_font ibmplexmonomedium-11
-pkill polybar ; polybar 1
