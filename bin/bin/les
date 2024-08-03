@@ -1,0 +1,35 @@
+#!/bin/sh
+#
+# browse/open docs
+
+extension() {
+    basename "$1" | sed 's/.*\.//'
+}
+
+list="$(
+    find "$HOME/docs" |
+        grep '\.pdf\|\.epub\|\.djvu\|\.mobi' |
+        sed 's/\/home\/lpy\/docs//' |
+        sort |
+        dmenu -l 10
+)"
+
+out="/home/lpy/docs/$list"
+
+# [ -f "$out" ] && zathura "$out"
+
+ext="$(extension "$out")"
+
+[ -f "$out" ] &&
+    if [ "$ext" = mobi ] || [ "$ext" = epub ]
+        then
+            zathura "$out"
+
+    elif [ "$ext" = djvu ]
+        then
+            zathura "$out"
+
+    else
+        viewer="$(printf '%s\n%s' "zathura" "firefox" | dmenu -l 3 -p "open pdf with:")"
+        "$viewer" "$out"
+    fi

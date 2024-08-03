@@ -1,0 +1,10 @@
+#!/bin/sh
+
+rot() {
+    printf '%s\n' "$@" | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+}
+
+case "$1" in
+    "-c") shift ; rot "$*" | xclip -sel clip ;;
+       *) rot "$*"
+esac

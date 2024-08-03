@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# scrot -> 0x0.st
+
+file=/tmp/"$(( $(date +%s) + 120938))".png
+
+case "$1" in
+    "") maim -su "$file" || exit 1;;
+    -f) maim -u "$file";;
+    -u) file="$2" ;;
+    # deprecated
+    # -l) curl -F shorten="$2" http://0x0.st && exit 0;
+esac
+
+yn=$(printf "yes\nno" | dmenu -l 3 -p "upload $(basename "$file") to 0x0.st?")
+
+sleep 4.2 && pkill -SIGUSR1 herbe &
+
+case "$yn" in
+    yes) curl -F file=@"$file" "https://0x0.st" | xclip -sel clip &&
+        herbe "uploaded to 0x0.";;
+
+    no) herbe "upload cancelled.";;
+esac

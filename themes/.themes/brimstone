@@ -1,0 +1,16 @@
+#define base00 #202020
+#define base01 #424433
+#define base02 #4f5b66
+#define base03 #757575
+#define base04 #a7adba
+#define base05 #d7d7af
+#define base06 #dfe1e8
+#define base07 #eff1f5
+#define base08 #ca5662
+#define base09 #d08770
+#define base0A #ffcbb5
+#define base0B #8fbc8f
+#define base0C #89cac4
+#define base0D #95c8dd
+#define base0E #fd80fd
+#define base0F #ab7967

@@ -1,0 +1,52 @@
+set adjust-open best-fit
+set selection-clipboard clipboard
+
+map [fullscreen] a adjust_window best-fit
+map [fullscreen] s adjust_window width
+map [fullscreen] f follow
+map [fullscreen] d toggle_page_mode 2
+map [fullscreen] <Tab> toggle_index
+map [fullscreen] j scroll down
+map [fullscreen] k scroll up
+map [fullscreen] <C-d> scroll half-down
+map [fullscreen] <C-u> scroll half-up
+map [fullscreen] <C-o> jumplist backward
+map [fullscreen] <C-i> jumplist forward
+
+map [index] q quit
+
+set font "Source Serif Pro 12"
+set guioptions n
+
+# colors
+set default-bg   "#efefef"
+set statusbar-fg "#ffffff"
+set statusbar-bg "#434343"
+
+set inputbar-bg "#fafafa"
+set inputbar-fg "#0f0f0f"
+
+set index-bg "#d5d5d8"
+set index-fg "#474445"
+set index-active-bg "#b5b5b8"
+set index-active-fg "#000000"
+
+set completion-highlight-fg "#0f0f0f"
+set completion-highlight-bg "#fafafa"
+set completion-bg "#fafafa"
+set completion-fg "#676767"
+
+set highlight-color "rgba(255, 255, 0, 0.5)"
+set highlight-fg "#000"
+
+set notification-fg "#ffffff"
+set notification-bg "#404040"
+
+set recolor-lightcolor "#2f2f2f"
+set recolor-darkcolor  "#afb8c6"
+
+set notification-error-bg "#ffffff"
+set notification-error-fg "#e15483"
+
+set notification-warning-bg "#ffffff"
+set notification-warning-fg "#e15483"

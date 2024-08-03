@@ -1,0 +1,32 @@
+# xbps
+alias pi='doas xbps-install -S'
+alias pd='doas xbps-remove -R'
+alias pq='xbps-query -R --regex -s'
+alias pqi='xbps-query -l'
+alias pu='doas xbps-install -Su'
+
+# programs
+alias R='R --vanilla'
+alias colo='pastel color'
+alias bc='bc -l ~/.ext.bc'
+alias csi='rlwrap csi'
+alias beets='beet import ~/downloads/music'
+alias weechat='pass -c weechat && weechat'
+alias toxic='pass -c tox && toxic'
+alias mus="tmux new -s music cmus || tmux attach -t music"
+alias nrepl="clj -m nrepl.cmdline --middleware \"[cider.nrepl/cider-middleware]\" --interactive"
+alias factorvm='rlwrap factor-vm -run=listener'
+alias J='rlwrap --always-readline --no-children -S "J> " jc'
+alias qgis='flatpak run org.qgis.qgis'
+
+# fm
+alias ls='ls --color=auto'
+
+# power
+alias poweroff='doas poweroff'
+alias reboot='doas reboot'
+
+# misc
+alias ivc='nvim ~/.config/nvim/init.vim'
+alias a='tmux a -t'
+alias l='tmux ls'
