@@ -12,13 +12,14 @@ case "$1" in
     # -l) curl -F shorten="$2" http://0x0.st && exit 0;
 esac
 
-yn=$(printf "yes\nno" | dmenu -l 3 -p "upload $(basename "$file") to 0x0.st?")
+yn=$(printf "upload to 0x0\nocr" | dmenu -l 3 -p "upload $(basename "$file") to 0x0.st?")
 
 sleep 4.2 && pkill -SIGUSR1 herbe &
 
 case "$yn" in
-    yes) curl -F file=@"$file" "https://0x0.st" | xclip -sel clip &&
+    ocr) tesseract-ocr -l eng -l jpn "$file" - | xclip -sel clip;;
+
+    "upload to 0x0") curl -F file=@"$file" "https://0x0.st" | xclip -sel clip &&
         herbe "uploaded to 0x0.";;
 
-    no) herbe "upload cancelled.";;
 esac

@@ -24,7 +24,7 @@ pgrep -x cmus > /dev/null && . /home/lpy/bin/np
 herbe \
     "‥  $ssid" " " \
     "‥  battery at $bat" " " \
-    "‥  $(date "+%a,  %d %b")" " " \
+    "‥  $(date "+%a,  %d %b,  %H%M hrs")" " " \
     "‥  volume  --  $vol" " " \
     "‥  $weather" " " \
     "$npstr"

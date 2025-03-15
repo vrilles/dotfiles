@@ -10,6 +10,7 @@ GPG_TTY=$(tty)
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 
+
 PS1="\n\[$(tput setaf 8)\]\w\n\[$(tput setaf 8)\]$ \[$(tput sgr0)\]"
 
 shopt -s \
