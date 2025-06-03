@@ -10,9 +10,6 @@ call plug#begin('~/.config/nvim/plugged')
  Plug 'elixir-editors/vim-elixir'
  Plug 'neovimhaskell/haskell-vim'
  Plug 'zah/nim.vim'
- Plug 'brandonbloom/vim-factor'
- Plug 'Olical/conjure'
- Plug 'Julian/lean.nvim'
 call plug#end()
 
 syntax on
@@ -56,7 +53,7 @@ autocmd FileType c setlocal noet tw=80
 autocmd FileType h setlocal noet tw=80
 autocmd FileType help setlocal laststatus=0
 
-set notermguicolors nosol conceallevel=2 path=$PWD/** wildmenu laststatus=2 splitright tabstop=4 noruler softtabstop=4 expandtab shiftwidth=4 smarttab smartcase guicursor= wildignore+=*/tmp/*,*.so,*.swp,*.zip, wildignore+=*.flac,*.mp3 mouse=i
+set notermguicolors nosol conceallevel=2 path=$PWD/** wildmenu laststatus=2 splitright tabstop=4 noruler softtabstop=4 expandtab shiftwidth=4 smarttab smartcase guicursor= wildignore+=*/tmp/*,*.so,*.swp,*.zip, wildignore+=*.flac,*.mp3 mouse=c
 
 function! GitBranch()
   return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")

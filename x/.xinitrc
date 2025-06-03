@@ -10,12 +10,11 @@ ibus-daemon -xdr &
 
 # sxhkd -c "$HOME/.config/berry/sxhkdrc" &
 sxhkd -c "$HOME/.config/sxhkd/sxhkdrc" &
+xrandr --output HDMI-1 --off
+xrandr --output HDMI-1 --auto
 
 ~/.fehbg &
 # urxvtd -q -o &
 # polybar &
 
-# exec berry
-# startxfce4
 exec openbox
-# exec xfwm4

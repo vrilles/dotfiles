@@ -1,4 +1,4 @@
-st.font: jetbrains mono:size=15.2
+st.font: iosevka ss08:style=medium:size=14
 dmenu.font:manrope extralight:size=15:style=regular:antialias=true:autohint=true
 emacs.font: Jetbrains Mono:size=18:style=regular
 
@@ -7,8 +7,8 @@ urxvt.italicFont: xft:Jetbrains Mono:size=15.2:style=italic
 urxvt.boldFont: xft:Jetbrains Mono:size=15.2:style=semibold,xft:Noto Sans Mono CJK JP:size=16:style=bold
 
 /* colors */
-#include "/home/lpy/.themes/seashell"
-/*#include "/home/lpy/.themes/sandcastle"*/
+//#include "/home/lpy/.themes/seashell"
+#include "/home/lpy/.themes/sandcastle"
 
 Xft.autohint: 1
 Xft.antialias: 1

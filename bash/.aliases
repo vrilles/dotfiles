@@ -27,6 +27,5 @@ alias poweroff='doas poweroff'
 alias reboot='doas reboot'
 
 # misc
-alias ivc='nvim ~/.config/nvim/init.vim'
 alias a='tmux a -t'
 alias l='tmux ls'
