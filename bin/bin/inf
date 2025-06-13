@@ -2,6 +2,8 @@
 #
 # info pop-up
 
+export DISPLAY=:1
+
 dir="/sys/class/power_supply/BAT0"
 bat="$(cat "$dir"/capacity)%"
 
@@ -21,7 +23,7 @@ mu="$(amixer sget Master |
 
 pgrep -x cmus > /dev/null && . /home/lpy/bin/np
 
-herbe \
+/usr/local/bin/herbe \
     "‥  $ssid" " " \
     "‥  battery at $bat" " " \
     "‥  $(date "+%a,  %d %b,  %H%M hrs")" " " \

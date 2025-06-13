@@ -3,7 +3,6 @@
 xrdb "$HOME"/.Xresources
 
 setxkbmap -option caps:escape -option compose:rctrl
-redshift &
 ibus-daemon -xdr &
 ~/bin/kbtoggle &
 # picom &

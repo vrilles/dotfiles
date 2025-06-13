@@ -1,0 +1,28 @@
+#!/bin/sh
+#
+# quick silly hack-around to prevent my laptop from falling asleep since 
+# I couldn't sniff the precise mechanism out, and cronie refused to run 
+# anything on my display even with all the variables set correctly (TODO); 
+# it wasn't acpid etc. and there was no script lying around calling 
+# ZZZ (that I could find) 
+
+TOGGLE_FILE="$HOME/.keep_awake"
+
+if [ "$1" = "toggle" ] 
+then
+    if [ ! -f "$TOGGLE_FILE" ]
+    then 
+        echo "on"
+        touch "$TOGGLE_FILE" 
+    else
+        echo "off"
+        rm "$TOGGLE_FILE"
+    fi
+    exit 0
+fi
+
+while true
+do
+    sleep 500
+    [ -f "$TOGGLE_FILE" ] && /usr/bin/xdotool key Scroll_Lock
+done

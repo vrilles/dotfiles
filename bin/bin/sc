@@ -17,7 +17,7 @@ yn=$(printf "upload to 0x0\nocr" | dmenu -l 3 -p "upload $(basename "$file") to 
 sleep 4.2 && pkill -SIGUSR1 herbe &
 
 case "$yn" in
-    ocr) tesseract-ocr -l eng "$file" - | xclip -sel clip;;
+    ocr) tesseract-ocr -l eng+jpn "$file" - --psm 7 | xclip -sel clip;;
 
     "upload to 0x0") curl -F file=@"$file" "https://0x0.st" | xclip -sel clip &&
         herbe "uploaded to 0x0.";;
