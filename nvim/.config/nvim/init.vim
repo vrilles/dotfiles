@@ -3,7 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
  Plug 'jiangmiao/auto-pairs'
  Plug 'tpope/vim-rsi'
  Plug 'tpope/vim-commentary'
- Plug 'neovim/nvim-lspconfig'
  Plug 'nvim-lua/plenary.nvim'
 
  Plug 'jalvesaq/Nvim-R'
@@ -46,7 +45,6 @@ command! WQ wq
 command! Wq wq
 command! W w
 command! Q q
-cabbrev he tab help
 
 autocmd BufNewFile *.tex 0r ~/.config/nvim/templates/template.tex
 autocmd FileType c setlocal noet tw=80

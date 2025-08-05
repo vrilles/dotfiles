@@ -15,5 +15,6 @@ xrandr --output HDMI-1 --auto
 ~/.fehbg &
 # urxvtd -q -o &
 # polybar &
+picom --backend=glx --window-shader-fg="$HOME/.grayscale.glsl" &
 
 exec openbox

@@ -19,15 +19,15 @@ set font "Source Serif Pro 12"
 set guioptions n
 
 # colors
-set default-bg   "#efefef"
+set default-bg   "#000000"
 set statusbar-fg "#ffffff"
-set statusbar-bg "#434343"
+set statusbar-bg "#000000"
 
 set inputbar-bg "#fafafa"
 set inputbar-fg "#0f0f0f"
 
-set index-bg "#d5d5d8"
-set index-fg "#474445"
+set index-bg "#000000"
+set index-fg "#ffffff"
 set index-active-bg "#b5b5b8"
 set index-active-fg "#000000"
 
@@ -40,13 +40,13 @@ set highlight-color "rgba(255, 255, 0, 0.5)"
 set highlight-fg "#000"
 
 set notification-fg "#ffffff"
-set notification-bg "#404040"
+set notification-bg "#000000"
 
-set recolor-lightcolor "#2f2f2f"
-set recolor-darkcolor  "#afb8c6"
+set recolor-lightcolor "#000000"
+set recolor-darkcolor  "#ffffff"
 
-set notification-error-bg "#ffffff"
-set notification-error-fg "#e15483"
+set notification-error-bg "#000000"
+set notification-error-fg "#9e392c"
 
-set notification-warning-bg "#ffffff"
-set notification-warning-fg "#e15483"
+set notification-warning-bg "#000000"
+set notification-warning-fg "#9e392c"
