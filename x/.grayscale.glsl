@@ -14,7 +14,7 @@ vec4 window_shader() {
 	float luminance = dot(color.rgb, vec3(0.2126, 0.7152, 0.0722));
 
 	// blend
-	color.rgb = mix(color.rgb, vec3(luminance), 0.95);
+	color.rgb = mix(color.rgb, vec3(luminance), 0.85);
 
 	// apply
 	color = vec4(color.rgb * opacity, color.a * opacity);

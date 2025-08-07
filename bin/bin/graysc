@@ -1,0 +1,3 @@
+#!/bin/sh
+#
+pkill picom || picom --backend=glx --window-shader-fg="$HOME/unriced/x/.grayscale.glsl" &
