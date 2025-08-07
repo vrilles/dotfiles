@@ -1,0 +1,57 @@
+#
+# wm independent hotkeys
+#
+# docs
+alt + i
+    "$HOME"/bin/les
+
+# take scrot
+super + s
+    "$HOME"/bin/sc
+
+# terminal emulator
+super + Return
+   st
+
+# program launcher
+super + d
+    dmenu_run -l 15
+
+# info script
+super + i
+    /home/lpy/bin/inf
+
+# ashen
+super + g
+    /home/lpy/bin/graysc
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + w
+    firefox
+
+super + {plus,minus,t}
+    amixer set Master {5%+,5%-,toggle}
+
+# cmus binds
+
+# toggle pause, {previous, next} track
+super + {S,P,N}
+    cmus-remote -{u,r,n}
+
+# seek
+super + bracket{left,right}
+    cmus-remote -k {-,+}10
+
+# dismiss notifications
+super + shift + @space
+    pkill -SIGUSR1 herbe
+
+super + z
+    boomer
+
+#restart polybar
+# super + shift + r
+#     pkill polybar ; polybar 1
